@@ -1,0 +1,329 @@
+@media (max-width: 1439px) {
+  .container {
+    max-width: 1040px;
+  }
+  .sidepanel {
+    display: none;
+  }
+  .skills {
+    &__wrapper {
+      grid-template: repeat(2, minmax(250px, auto)) / repeat(4, 250px);
+      grid-auto-rows: minmax(250px, auto);
+    }
+    &__ratings {
+      grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 300px);
+      column-gap: 45px;
+      row-gap: 35px;
+      &-line {
+        width: 300px;
+      }
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      grid-template: repeat(2, 260px) / repeat(4, 260px);
+      grid-auto-rows: 260px;
+    }
+  }
+  .price {
+    &__wrapper {
+      padding-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .sidepanel {
+    display: none;
+  }
+  .about {
+    &__wrapper {
+      column-gap: 10px;
+      grid-template-columns: 370px 560px;
+    }
+    &__skills {
+      grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 230px);
+      column-gap: 30px;
+      &-item {
+        column-gap: 15px;
+      }
+    }
+  }
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2, 375px);
+      column-gap: 80px;
+    }
+  }
+  .skills {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 270px);
+      justify-content: space-around;
+      row-gap: 30px;
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 350px);
+      grid-auto-rows: minmax(70px, auto);
+      justify-content: space-around;
+      padding: 0 30px;
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 30px;
+      .horizontal,
+      .vertical {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+  }
+  .contacts {
+    &__wrapper {
+      padding: 0;
+      grid-template-columns: 400px 520px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 250px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .title {
+    &_fs48 {
+      font-size: 40px;
+    }
+  }
+  .promo {
+    background: url('../../img/sova_new.png') no-repeat 50% / cover;
+    padding-top: 100px;
+
+    &__title {
+      line-height: 40px;
+      width: 400px;
+    }
+  }
+  .about {
+    padding-top: 40px;
+    &__wrapper {
+      column-gap: 20px;
+      grid-template-columns: 300px 380px;
+    }
+    &__skills {
+      grid-template-columns: 380px;
+      &-item {
+        grid-template-columns: 40px 320px;
+      }
+    }
+  }
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2, 270px);
+      column-gap: 50px;
+    }
+  }
+  .skills {
+    &__wrapper {
+      margin-top: 40px;
+      padding: 0;
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 320px);
+      justify-content: space-between;
+      padding: 0;
+      column-gap: 0;
+      &-line {
+        width: 100%;
+      }
+    }
+  }
+  .price {
+    &__wrapper {
+      grid-template: repeat(3, 44px) / repeat(2, 350px);
+      padding: 60px 0 0 0;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 300px 400px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 195px);
+    }
+    &__btn {
+      padding: 8px 25px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title {
+    &_fs48 {
+      font-size: 28px;
+    }
+  }
+  .promo {
+    background: url('../../img/sova_new.png') no-repeat 50% / cover;
+    &__title {
+      line-height: 39px;
+      width: 250px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template: 400px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 260px);
+      &-item {
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+      }
+    }
+  }
+  .resume {
+    padding-top: 60px;
+    &__wrapper {
+      grid-template: 400px auto auto / 1fr;
+      row-gap: 40px;
+    }
+  }
+  .skills {
+    padding-top: 60px;
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 250px);
+      grid-auto-rows: minmax(250px, auto);
+    }
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 250px);
+      grid-auto-rows: minmax(70px, auto);
+      margin-top: 40px;
+      &-line {
+        width: 100%;
+      }
+    }
+  }
+  .portfolio {
+    padding-top: 60px;
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 250px);
+      grid-auto-rows: 250px;
+    }
+  }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 350px);
+      justify-content: center;
+    }
+  }
+  .contacts {
+    padding-top: 60px;
+
+    &__photo {
+      display: none;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 250px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .promo {
+    background: url('../../img/sova_new.png') no-repeat 45% / cover;
+    &__title {
+      width: 140px;
+    }
+  }
+  .menu {
+    &__block {
+      width: 250px;
+    }
+  }
+  .title {
+    &_fs48 {
+      font-size: 26px;
+    }
+  }
+  .title {
+    &_fs36 {
+      font-size: 26px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+    }
+  }
+  .resume {
+    &__wrapper {
+      grid-template: auto / 1fr;
+      row-gap: 40px;
+    }
+  }
+  .skills {
+    &__ratings {
+      grid-template-columns: repeat(auto-fit, 300px);
+      justify-content: center;
+    }
+  }
+  .price {
+    &__wrapper {
+      padding: 40px 0 0 0;
+      grid-template-columns: repeat(auto-fit, 295px);
+    }
+  }
+  .contacts {
+    padding-bottom: 50px;
+    &__form {
+      grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+    }
+    &__textarea {
+      grid-column: unset;
+      width: 100%;
+    }
+    &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+      row-gap: 20px;
+    }
+    &__btn {
+      order: 2;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    &__policy {
+      width: 180px;
+      margin: 0 auto;
+      line-height: 18px;
+    }
+  }
+}
