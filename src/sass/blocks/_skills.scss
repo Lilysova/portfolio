@@ -2,20 +2,24 @@
   padding-top: 120px;
 
   &__wrapper {
-    padding: 60px 0;
+    padding: 60px 0 0 30px;
     display: grid;
-    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
-    grid-auto-rows: minmax(270px, auto);
-    gap: 13px;
+    grid-template: repeat(2, minmax(150px, auto)) / repeat(6, 150px);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 35px;
   }
   &__columns {
     border: 2px;
     border-style: solid;
     border-color: black;
+
     padding: 30px;
   }
   &__item {
-    margin-top: 20px;
+    margin: 0 auto;
+  }
+  &__icon {
+    text-align: center;
   }
   &__descr {
     font-size: 12px;
