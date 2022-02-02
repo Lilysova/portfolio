@@ -1,21 +1,14 @@
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url('../../img/sova_new.png') no-repeat 50% / cover;
-  padding-top: 205px;
-  &__title {
-    width: 535px;
-    margin-top: 10px;
-  }
-  &__circle {
-    position: relative;
-    padding-left: 10px;
-    z-index: 2;
-    @include before_circle;
+  background: url('../../img/bg_2.png') no-repeat 50% / cover;
+  &__wrapper {
+    padding: 600px 0 50px 0;
   }
   &__btns {
     margin-top: 25px;
     display: flex;
+    align-content: flex-end;
     align-items: center;
     justify-content: space-between;
     width: 250px;

@@ -5,6 +5,7 @@
   .sidepanel {
     display: none;
   }
+
   .skills {
     &__wrapper {
       grid-template: repeat(2, minmax(250px, auto)) / repeat(4, 250px);
@@ -38,6 +39,9 @@
   }
   .sidepanel {
     display: none;
+  }
+  .promo {
+    background: url('../img/bg_1200.png') no-repeat 50% / cover;
   }
   .about {
     &__wrapper {
@@ -108,12 +112,12 @@
     margin: 15px auto 0 auto;
   }
   .promo {
-    background: url('../../img/sova_new.png') no-repeat 50% / cover;
-    padding-top: 100px;
-
-    &__title {
-      line-height: 40px;
-      width: 400px;
+    background: url('../img/bg_992.png') no-repeat 50% / cover;
+    &__wrapper {
+      padding: 700px 0 50px 0;
+    }
+    &__btns {
+      margin: 0 auto;
     }
   }
   .about {
@@ -180,10 +184,10 @@
     }
   }
   .promo {
-    background: url('../../img/sova_new.png') no-repeat 50% / cover;
-    &__title {
-      line-height: 39px;
-      width: 250px;
+    background: url('../img/bg_768.png') no-repeat 70% / cover;
+
+    &__btns {
+      margin: 0 auto;
     }
   }
   .about {
@@ -231,6 +235,7 @@
     &__wrapper {
       grid-template-columns: repeat(auto-fit, 350px);
       justify-content: center;
+      row-gap: 30px;
     }
   }
   .contacts {
@@ -257,10 +262,7 @@
     right: 20px;
   }
   .promo {
-    background: url('../../img/sova_new.png') no-repeat 45% / cover;
-    &__title {
-      width: 140px;
-    }
+    background: url('../img/bg_576.png') no-repeat 50% / cover;
   }
   .menu {
     &__block {
