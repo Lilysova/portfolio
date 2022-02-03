@@ -5,6 +5,9 @@
   .sidepanel {
     display: none;
   }
+  .promo {
+    background: url('../img/bg_1440.png') no-repeat 50% / cover;
+  }
 
   .skills {
     &__wrapper {
@@ -183,7 +186,7 @@
     }
   }
   .promo {
-    background: url('../img/bg_768.png') no-repeat 70% / cover;
+    background: url('../img/bg_768.png') no-repeat 50% / cover;
 
     &__btns {
       margin: 0 auto;
